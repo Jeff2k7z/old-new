@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="split.css" rel="stylesheet"/>
+    <title>Florida Blue Old New</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="oldnew">
+        <div id="old" class="split split-horizontal foreground foreground-left">
+          <img src="dcmg_old.png" alt="old">
+        </div>
+        <div id="new" class="split split-horizontal foreground foreground-right">
+          <img src="dcmg_new.png" alt="new">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="split.js"></script>
+  <script>
+    Split(['#old', '#new'], {
+      sizes: [50, 50],
+      minSize: 20,
+      gutterSize: 1
+    });
+  </script>
+</html>

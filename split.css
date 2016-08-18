@@ -1,0 +1,174 @@
+.container {
+  text-align: center;
+  margin: auto;
+}
+.split p {
+  padding: 0;
+}
+
+.split {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url('vertical.png');
+  cursor: ew-resize;
+  overflow: visible;
+}
+
+.gutter.gutter-vertical {
+  background-image: url('horizontal.png');
+  cursor: ns-resize;
+}
+
+.split.split-horizontal, .gutter.gutter-horizontal {
+  height: 100%;
+  float: left;
+}
+
+.oldnew {
+  margin: 0 auto;
+}
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .oldnew {
+    width: 400px;
+    height: 225px;
+    border-radius: 4px;
+  }
+
+  .foreground {
+    overflow: hidden;
+    width: 400px;
+  }
+  .foreground img {
+    width: 400px;
+  }
+  .thumbcontainer {
+    margin-top: 92px;
+  }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .oldnew {
+    width: 550px;
+    height: 309px;
+    border-radius: 4px;
+  }
+
+  .foreground {
+    overflow: hidden;
+    width: 550px;
+  }
+  .foreground img {
+    width: 550px;
+  }
+
+  .thumbcontainer {
+    margin-top: 135px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .oldnew {
+    width: 750px;
+    height: 422px;
+    border-radius: 4px;
+  }
+
+  .foreground {
+    overflow: hidden;
+    width: 750px;
+  }
+  .foreground img {
+    width: 750px;
+  }
+
+  .thumbcontainer {
+    margin-top: 190px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .oldnew {
+    width: 1000px;
+    height: 562px;
+    border-radius: 4px;
+  }
+
+  .foreground {
+    overflow: hidden;
+    width: 1000px;
+  }
+  .foreground img {
+    width: 1000px;
+  }
+
+  .thumbcontainer {
+    margin-top: 261px;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .oldnew {
+    width: 1200px;
+    height: 675px;
+    border-radius: 4px;
+  }
+
+  .foreground {
+    overflow: hidden;
+    width: 1200px;
+  }
+  .foreground img {
+    width: 1200px;
+  }
+
+  .thumbcontainer {
+    margin-top: 317px;
+  }
+}
+
+
+
+.foreground-left img {
+  float: left;
+}
+
+.foreground-right img {
+  float: right;
+}
+
+.thumbcontainer {
+  position: relative;
+  right: 50%;
+  text-align: center;
+  margin-left: -20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 12px 0;
+}
+
+.thumb {
+  content: url("image-comparison-bullet.png");
+  margin-top: 12px;
+}
